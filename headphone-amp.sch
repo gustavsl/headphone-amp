@@ -1,0 +1,476 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Amplifier_Operational:NE5532 U1
+U 2 1 5DDBDB16
+P 6900 2700
+F 0 "U1" H 6900 3067 50  0000 C CNN
+F 1 "NE5532" H 6900 2976 50  0000 C CNN
+F 2 "" H 6900 2700 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 6900 2700 50  0001 C CNN
+	2    6900 2700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U?
+U 3 1 5DDBF33D
+P 6900 1650
+F 0 "U?" H 6858 1696 50  0000 L CNN
+F 1 "NE5532" H 6858 1605 50  0000 L CNN
+F 2 "" H 6900 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 6900 1650 50  0001 C CNN
+	3    6900 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1_Small C3
+U 1 1 5DDC5FCE
+P 6950 900
+F 0 "C3" V 7178 900 50  0000 C CNN
+F 1 "22p" V 7087 900 50  0000 C CNN
+F 2 "" H 6950 900 50  0001 C CNN
+F 3 "~" H 6950 900 50  0001 C CNN
+	1    6950 900 
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:R_Small R4
+U 1 1 5DDC75A1
+P 6950 1200
+F 0 "R4" V 6754 1200 50  0000 C CNN
+F 1 "68k" V 6845 1200 50  0000 C CNN
+F 2 "" H 6950 1200 50  0001 C CNN
+F 3 "~" H 6950 1200 50  0001 C CNN
+	1    6950 1200
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J1
+U 1 1 5DDC7D64
+P 8500 1650
+F 0 "J1" H 8320 1668 50  0000 R CNN
+F 1 "AudioJack2_Ground" H 8320 1577 50  0000 R CNN
+F 2 "" H 8500 1650 50  0001 C CNN
+F 3 "~" H 8500 1650 50  0001 C CNN
+	1    8500 1650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_POT_Dual RV1
+U 1 1 5DDC8B57
+P 5200 2150
+F 0 "RV1" V 5154 1963 50  0000 R CNN
+F 1 "22k" V 5245 1963 50  0000 R CNN
+F 2 "" H 5450 2075 50  0001 C CNN
+F 3 "~" H 5450 2075 50  0001 C CNN
+	1    5200 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Amplifier_Operational:NE5532 U1
+U 1 1 5DDBC5D1
+P 6900 1650
+F 0 "U1" H 6900 1283 50  0000 C CNN
+F 1 "NE5532" H 6900 1374 50  0000 C CNN
+F 2 "" H 6900 1650 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/ne5532.pdf" H 6900 1650 50  0001 C CNN
+	1    6900 1650
+	1    0    0    1   
+$EndComp
+Wire Wire Line
+	6600 1550 6500 1550
+Wire Wire Line
+	6500 1550 6500 1200
+Wire Wire Line
+	6500 1200 6850 1200
+Wire Wire Line
+	6850 900  6500 900 
+Wire Wire Line
+	6500 900  6500 1200
+Connection ~ 6500 1200
+Wire Wire Line
+	7050 1200 7450 1200
+Wire Wire Line
+	7450 1200 7450 1650
+Wire Wire Line
+	7450 1650 7200 1650
+Wire Wire Line
+	7450 1200 7450 900 
+Wire Wire Line
+	7450 900  7050 900 
+Connection ~ 7450 1200
+$Comp
+L Device:CP1_Small C4
+U 1 1 5DDD9552
+P 7700 1650
+F 0 "C4" V 7928 1650 50  0000 C CNN
+F 1 "220u" V 7837 1650 50  0000 C CNN
+F 2 "" H 7700 1650 50  0001 C CNN
+F 3 "~" H 7700 1650 50  0001 C CNN
+	1    7700 1650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7600 1650 7450 1650
+Connection ~ 7450 1650
+Wire Wire Line
+	7800 1650 8300 1650
+$Comp
+L power:GND #PWR?
+U 1 1 5DDE1912
+P 8500 1950
+F 0 "#PWR?" H 8500 1700 50  0001 C CNN
+F 1 "GND" H 8505 1777 50  0000 C CNN
+F 2 "" H 8500 1950 50  0001 C CNN
+F 3 "" H 8500 1950 50  0001 C CNN
+	1    8500 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8500 1950 8500 1850
+$Comp
+L Device:R_Small R6
+U 1 1 5DDE7E55
+P 6950 3150
+F 0 "R6" V 6754 3150 50  0000 C CNN
+F 1 "68k" V 6845 3150 50  0000 C CNN
+F 2 "" H 6950 3150 50  0001 C CNN
+F 3 "~" H 6950 3150 50  0001 C CNN
+	1    6950 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 3150 6500 3150
+Wire Wire Line
+	6500 3150 6500 2800
+Wire Wire Line
+	6500 2800 6600 2800
+Wire Wire Line
+	6850 3450 6500 3450
+Wire Wire Line
+	6500 3450 6500 3150
+Connection ~ 6500 3150
+Wire Wire Line
+	7050 3150 7450 3150
+Wire Wire Line
+	7450 3150 7450 2700
+Wire Wire Line
+	7450 2700 7200 2700
+Wire Wire Line
+	7050 3450 7450 3450
+Wire Wire Line
+	7450 3450 7450 3150
+Connection ~ 7450 3150
+$Comp
+L Device:CP1_Small C2
+U 1 1 5DDEC134
+P 6450 2000
+F 0 "C2" H 6541 2046 50  0000 L CNN
+F 1 "4.7u" H 6541 1955 50  0000 L CNN
+F 2 "" H 6450 2000 50  0001 C CNN
+F 3 "~" H 6450 2000 50  0001 C CNN
+	1    6450 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 1900 6450 1750
+Wire Wire Line
+	6450 1750 6600 1750
+$Comp
+L Device:R_Small R3
+U 1 1 5DDED8DF
+P 6300 2000
+F 0 "R3" H 6150 2050 50  0000 L CNN
+F 1 "68k" H 6100 1950 50  0000 L CNN
+F 2 "" H 6300 2000 50  0001 C CNN
+F 3 "~" H 6300 2000 50  0001 C CNN
+	1    6300 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6300 1900 6300 1750
+Wire Wire Line
+	6300 1750 6450 1750
+Connection ~ 6450 1750
+Wire Wire Line
+	6300 1750 5750 1750
+Wire Wire Line
+	5750 1750 5750 2600
+Wire Wire Line
+	5750 2600 6600 2600
+Connection ~ 6300 1750
+$Comp
+L Device:R_Small R5
+U 1 1 5DDEF215
+P 6150 2800
+F 0 "R5" V 5954 2800 50  0000 C CNN
+F 1 "18k" V 6045 2800 50  0000 C CNN
+F 2 "" H 6150 2800 50  0001 C CNN
+F 3 "~" H 6150 2800 50  0001 C CNN
+	1    6150 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6250 2800 6500 2800
+Connection ~ 6500 2800
+$Comp
+L Device:CP1_Small C6
+U 1 1 5DDF1B95
+P 5850 2800
+F 0 "C6" V 5622 2800 50  0000 C CNN
+F 1 "4.7u" V 5713 2800 50  0000 C CNN
+F 2 "" H 5850 2800 50  0001 C CNN
+F 3 "~" H 5850 2800 50  0001 C CNN
+	1    5850 2800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5950 2800 6050 2800
+$Comp
+L Device:R_Small R2
+U 1 1 5DDF6A3E
+P 6300 1300
+F 0 "R2" H 6359 1346 50  0000 L CNN
+F 1 "68k" H 6359 1255 50  0000 L CNN
+F 2 "" H 6300 1300 50  0001 C CNN
+F 3 "~" H 6300 1300 50  0001 C CNN
+	1    6300 1300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_Small R1
+U 1 1 5DE0064C
+P 6150 1550
+F 0 "R1" V 5954 1550 50  0000 C CNN
+F 1 "18k" V 6045 1550 50  0000 C CNN
+F 2 "" H 6150 1550 50  0001 C CNN
+F 3 "~" H 6150 1550 50  0001 C CNN
+	1    6150 1550
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:CP1_Small C1
+U 1 1 5DE01E2E
+P 5900 1550
+F 0 "C1" V 5672 1550 50  0000 C CNN
+F 1 "4.7u" V 5763 1550 50  0000 C CNN
+F 2 "" H 5900 1550 50  0001 C CNN
+F 3 "~" H 5900 1550 50  0001 C CNN
+	1    5900 1550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6000 1550 6050 1550
+Connection ~ 6500 1550
+Wire Wire Line
+	6250 1550 6500 1550
+Wire Wire Line
+	6300 1750 6300 1400
+$Comp
+L power:GND #PWR?
+U 1 1 5DE0E357
+P 6300 2200
+F 0 "#PWR?" H 6300 1950 50  0001 C CNN
+F 1 "GND" H 6305 2027 50  0000 C CNN
+F 2 "" H 6300 2200 50  0001 C CNN
+F 3 "" H 6300 2200 50  0001 C CNN
+	1    6300 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE0E70C
+P 6450 2200
+F 0 "#PWR?" H 6450 1950 50  0001 C CNN
+F 1 "GND" H 6455 2027 50  0000 C CNN
+F 2 "" H 6450 2200 50  0001 C CNN
+F 3 "" H 6450 2200 50  0001 C CNN
+	1    6450 2200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2200 6450 2100
+Wire Wire Line
+	6300 2200 6300 2100
+Wire Wire Line
+	5300 2400 5300 2800
+Wire Wire Line
+	5300 2800 5750 2800
+$Comp
+L power:GND #PWR?
+U 1 1 5DE1209C
+P 5100 2600
+F 0 "#PWR?" H 5100 2350 50  0001 C CNN
+F 1 "GND" H 5105 2427 50  0000 C CNN
+F 2 "" H 5100 2600 50  0001 C CNN
+F 3 "" H 5100 2600 50  0001 C CNN
+	1    5100 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2600 5100 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5DE1390B
+P 5100 2050
+F 0 "#PWR?" H 5100 1800 50  0001 C CNN
+F 1 "GND" H 5105 1877 50  0000 C CNN
+F 2 "" H 5100 2050 50  0001 C CNN
+F 3 "" H 5100 2050 50  0001 C CNN
+	1    5100 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AudioJack2_Ground J2
+U 1 1 5DE16AEC
+P 4200 2250
+F 0 "J2" H 4232 2575 50  0000 C CNN
+F 1 "AudioJack2_Ground" H 4232 2484 50  0000 C CNN
+F 2 "" H 4200 2250 50  0001 C CNN
+F 3 "~" H 4200 2250 50  0001 C CNN
+	1    4200 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE189D9
+P 4200 2500
+F 0 "#PWR?" H 4200 2250 50  0001 C CNN
+F 1 "GND" H 4205 2327 50  0000 C CNN
+F 2 "" H 4200 2500 50  0001 C CNN
+F 3 "" H 4200 2500 50  0001 C CNN
+	1    4200 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 2500 4200 2450
+Wire Wire Line
+	4400 2150 4400 1750
+Wire Wire Line
+	4400 1750 5100 1750
+Wire Wire Line
+	4400 2250 5100 2250
+$Comp
+L Device:CP1_Small C5
+U 1 1 5DE38867
+P 7600 800
+F 0 "C5" H 7691 846 50  0000 L CNN
+F 1 "220u" H 7691 755 50  0000 L CNN
+F 2 "" H 7600 800 50  0001 C CNN
+F 3 "~" H 7600 800 50  0001 C CNN
+	1    7600 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE3961B
+P 6800 2050
+F 0 "#PWR?" H 6800 1800 50  0001 C CNN
+F 1 "GND" H 6805 1877 50  0000 C CNN
+F 2 "" H 6800 2050 50  0001 C CNN
+F 3 "" H 6800 2050 50  0001 C CNN
+	1    6800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 1350 6800 700 
+Wire Wire Line
+	6800 700  6300 700 
+Wire Wire Line
+	6300 700  6300 1200
+Wire Wire Line
+	6800 2050 6800 1950
+Wire Wire Line
+	6800 700  7600 700 
+Connection ~ 6800 700 
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 5DE5B033
+P 8350 700
+F 0 "SW1" H 8350 935 50  0000 C CNN
+F 1 "SW_SPST" H 8350 844 50  0000 C CNN
+F 2 "" H 8350 700 50  0001 C CNN
+F 3 "~" H 8350 700 50  0001 C CNN
+	1    8350 700 
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DE5D53F
+P 7600 1000
+F 0 "#PWR?" H 7600 750 50  0001 C CNN
+F 1 "GND" H 7605 827 50  0000 C CNN
+F 2 "" H 7600 1000 50  0001 C CNN
+F 3 "" H 7600 1000 50  0001 C CNN
+	1    7600 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7600 1000 7600 900 
+Wire Wire Line
+	7600 700  8150 700 
+Connection ~ 7600 700 
+$Comp
+L Device:Battery_Cell BT1
+U 1 1 5DE5FF21
+P 8700 900
+F 0 "BT1" H 8818 996 50  0000 L CNN
+F 1 "Battery_Cell" H 8818 905 50  0000 L CNN
+F 2 "" V 8700 960 50  0001 C CNN
+F 3 "~" V 8700 960 50  0001 C CNN
+	1    8700 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8550 700  8700 700 
+$Comp
+L power:GND #PWR?
+U 1 1 5DE61681
+P 8700 1100
+F 0 "#PWR?" H 8700 850 50  0001 C CNN
+F 1 "GND" H 8705 927 50  0000 C CNN
+F 2 "" H 8700 1100 50  0001 C CNN
+F 3 "" H 8700 1100 50  0001 C CNN
+	1    8700 1100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8700 1100 8700 1000
+Connection ~ 7450 2700
+Wire Wire Line
+	8250 2700 8250 1550
+Wire Wire Line
+	8250 1550 8300 1550
+Wire Wire Line
+	7450 2700 8250 2700
+$Comp
+L Device:CP1_Small C7
+U 1 1 5DDE8342
+P 6950 3450
+F 0 "C7" V 6722 3450 50  0000 C CNN
+F 1 "22p" V 6813 3450 50  0000 C CNN
+F 2 "" H 6950 3450 50  0001 C CNN
+F 3 "~" H 6950 3450 50  0001 C CNN
+	1    6950 3450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5800 1550 5350 1550
+Wire Wire Line
+	5350 1550 5350 1900
+Wire Wire Line
+	5350 1900 5300 1900
+$EndSCHEMATC
